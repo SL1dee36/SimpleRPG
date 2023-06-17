@@ -168,8 +168,10 @@ window.title("SimpleRPG V0.3")
 window.geometry('800x560')
 window.resizable(False, False)
 window.configure(bg="white")
-icon_path = "C:/Users/nazar/Downloads/swordsman.ico"
-window.iconbitmap(default=icon_path)
+try:
+    icon_path = "C:/Users/nazar/Downloads/swordsman.ico"
+    window.iconbitmap(default=icon_path)
+except: pass
 font = ("Consolas", 14)
 style = ttk.Style()
 
